@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_margin="10dp"
     android:orientation="vertical"
-    tools:context=".Convertidor_Concentracion">
+    tools:context=".Convertidor_Masa">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,7 +34,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_horizontal|center_vertical"
-                android:text="@string/Masa"
+                android:text="@string/Concentracion"
                 android:textSize="20sp" />
 
             <TextView
@@ -96,7 +96,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_horizontal|center_vertical"
-                android:text="@string/Concentracion"
+                android:text="@string/Masa"
                 android:textSize="20sp" />
 
             <TextView

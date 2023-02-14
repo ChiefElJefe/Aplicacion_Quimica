@@ -16,12 +16,12 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.aplicacion_quimica.clases.Sustancia;
 import com.example.aplicacion_quimica.BD.DbHelper;
+import com.example.aplicacion_quimica.clases.Sustancia;
 
 import java.util.ArrayList;
 
-public class Convertidor_Concentracion extends AppCompatActivity {
+public class Convertidor_Masa extends AppCompatActivity {
     private Button calcular, volver, registros;
     private Intent lista, paso_Registros;
     private String usuario, sust;
@@ -37,7 +37,7 @@ public class Convertidor_Concentracion extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_convertidor_concentracion);
+        setContentView(R.layout.activity_convertidor_masa);
         calcular = findViewById(R.id.idbtCalcular2);
         volver = findViewById(R.id.idbtVolver2);
         registros = findViewById(R.id.idbtReg);
@@ -94,10 +94,10 @@ public class Convertidor_Concentracion extends AppCompatActivity {
                 masa = Double.parseDouble(mas.getText().toString());
                 volumen = Double.parseDouble(vol.getText().toString());
 
-                Double resul = (masa / mr) / volumen;
-                String result = resul+"M";
+                Double resul = masa * mr * volumen;
+                String result = resul + "g";
                 resultado.setText(result);
-                based.anRegistros(usuario, sust, result, mas.getText().toString()+"g", vol.getText().toString()+"cm3");
+                based.anRegistros(usuario, sust, mas.getText().toString() + "M", result, vol.getText().toString() + "cm3");
             }
         });
 
@@ -145,4 +145,5 @@ public class Convertidor_Concentracion extends AppCompatActivity {
             }
         }
     }
+
 }

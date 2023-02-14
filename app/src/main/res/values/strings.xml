@@ -3,4 +3,21 @@
     <string name="idbtEntrada">Entrar</string>
     <string name="idtxtContador">1</string>
     <string name="idtxtTitulo">Al-Chemist</string>
+    <string name="idtxtusuario">Usuario</string>
+    <string name="idtxtContrasenna">Contraseña</string>
+    <string name="idtxtNuevaContrasenna">Nueva Contraseña</string>
+    <string name="idtxtCrearUsuario">Nuevo Usuario</string>
+    <string name="idbtCrearUsuario">Crear Usuario</string>
+    <string name="idbtAceptar">Aceptar</string>
+    <string name="Sustancia">Sustancia</string>
+    <string name="Concentracion">Concentración(M)</string>
+    <string name="Masa">Masa(g)</string>
+    <string name="Volumen">Volumen(cm3)</string>
+    <string name="Volver">Volver</string>
+    <string name="Calcular">Calcular</string>
+    <string name="Registro">Registro</string>
+    <string name="CSV">CSV</string>
+    <string name="XML">XML</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
